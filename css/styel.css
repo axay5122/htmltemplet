@@ -1,0 +1,110 @@
+body {
+    background-image: url("/img/pexels-johannes-plenio-1103970.jpg");
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+nav {
+    display: flex;
+    direction: row;
+    height: 20vh;
+}
+
+.brand-img {
+    flex: 1;
+    margin: auto;
+}
+
+.nav-manu {
+    flex: 2;
+    align-items: center;
+    justify-content: space-between;
+    display: flex;
+    list-style-type: none;
+}
+
+.nav-link {
+    color: black;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.menu-icone {
+    display: none;
+}
+
+.nav-logo img {
+    height: 80px;
+    display: block;
+}
+
+.nav-button {
+    background-color: #E6425E;
+    padding: 5px 40px;
+    cursor: pointer;
+    border: none;
+    border-radius: 20px;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    direction: row;
+    height: 80vh;
+}
+
+.col {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    color: white;
+}
+
+.col p {
+    font-size: 25px;
+}
+
+.col h1 {
+    font-size: 75px;
+    margin: 20px 0;
+}
+
+.google-play-icon {
+    /* align-items: left; */
+    height: 150px;
+    width: 270px;
+    position: absolute bottom;
+}
+
+.phone-img {
+    /* margin: auto;
+    height: 650px; */
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    height: 80vh;
+}
+
+@media screen and (max-width: 860px) {
+    .phone-img {
+        height: 60%;
+    }
+    nav .nav-list {
+        display: none;
+    }
+    nav .menu-icone {
+        display: block;
+        margin: auto;
+    }
+    nav .menu-icone i {
+        color: rgb(3, 3, 3);
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 500px) {
+    .phone-img {
+        display: none;
+    }
+}
